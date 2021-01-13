@@ -44,9 +44,6 @@ def numberToWord(num):
 
         return chunks_array
 
-    def chunkProcessing(chunk):
-        pass
-
     chunks = numToChunks(num)
 
     for idx, chunk in enumerate(chunks):
