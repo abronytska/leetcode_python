@@ -5,8 +5,7 @@ class ListNode:
 
 
 class Solution:
-    @staticmethod
-    def getDecimalValue(head: ListNode) -> int:
+    def getDecimalValue(self, head: ListNode) -> int:
         num = head.val
         while head.next:
             num = num * 2 + head.next.val
@@ -22,5 +21,5 @@ val1.next = val2
 val2.next = val3
 val3.next = val4
 
-
-print(Solution.getDecimalValue(val1))
+sol = Solution()
+print(sol.getDecimalValue(val1))
